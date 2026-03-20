@@ -8,10 +8,6 @@ from pathlib import Path
 
 from agent import chat as agent_chat
 import rag
-# from mylogs import setup_logging
-# # Initialize logging FIRST
-# LOG_PATH = setup_logging()
-# logger = logging.getLogger(__name__)
 
 logging.basicConfig(
     level=logging.INFO,
