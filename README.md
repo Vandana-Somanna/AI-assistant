@@ -54,8 +54,9 @@ project/
 ├── agent/                 # Chat logic + orchestration
 ├── tools/                 # Custom tools                  
 │
-└── main.py                # Entry point(FAST API)```
+└── main.py                # Entry point(FAST API)
 
+```
 ## Architecture Explanation
 1.** User Interaction (FastAPI)**
   User sends query via /chat endpoint
