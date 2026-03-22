@@ -58,6 +58,7 @@ project/
 
 ```
 ## Architecture Explanation
+```
 1.** User Interaction (FastAPI)**
   User sends query via /chat endpoint
   Request is handled in main.py
@@ -118,8 +119,9 @@ _example_:
 [USER QUERY]: Where is my order ORD123?
 [TOOLS USED]: ['check_order_status']
 [RESPONSE]: Order is delivered
-
+```
 ##Features:
+```
 -> Multi-turn conversation memory
 -> Tool-based execution
 -> RAG-based knowledge retrieval
