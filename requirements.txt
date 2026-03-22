@@ -1,0 +1,14 @@
+langchain
+langchain-core
+langchain-community
+sentence-transformers
+faiss-cpu
+chromadb
+langchain-groq
+python-dotenv
+deepagents
+typesense
+fastapi
+uvicorn
+logging
+logging.config

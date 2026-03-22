@@ -1,0 +1,5 @@
+Q: How can I track my order?
+A: You can track your order using your order ID.
+
+Q: Can I cancel my order?
+A: Orders can be cancelled before they are shipped.

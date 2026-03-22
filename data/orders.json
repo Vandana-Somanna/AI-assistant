@@ -1,0 +1,12 @@
+{
+  "ORD123": {
+    "customer_name": "Ravi Kumar",
+    "status": "shipped",
+    "expected_delivery": "2026-03-20"
+  },
+  "ORD456": {
+    "customer_name": "Anita Sharma",
+    "status": "delivered",
+    "expected_delivery": "2026-03-12"
+  }
+}
