@@ -38,7 +38,7 @@ API=your_groq_api_key
 uvicorn main:app --reload --port 8000
 
 ## Project Structure
-
+```
 project/
 │
 ├── data/
@@ -54,7 +54,7 @@ project/
 ├── agent/                 # Chat logic + orchestration
 ├── tools/                 # Custom tools                  
 │
-└── main.py                # Entry point(FAST API)
+└── main.py                # Entry point(FAST API)```
 
 ## Architecture Explanation
 1.** User Interaction (FastAPI)**
