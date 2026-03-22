@@ -18,8 +18,8 @@ The system combines:
 
 ##  Setup Instructions
 
-### Clone the repository
-```bash
+
+### Clone the repository 
 git clone <your-repo-link>
 cd project
 
