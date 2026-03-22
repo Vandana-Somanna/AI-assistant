@@ -3,15 +3,6 @@
 2026-03-21 03:36:22,006 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-21 03:38:56,145 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-21 03:41:49,018 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 03:42:10,910 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 03:42:40,832 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 03:47:07,505 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 04:12:52,963 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 04:21:03,602 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 04:21:12,792 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 04:21:32,811 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 04:21:43,458 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 04:22:06,528 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-21 05:10:02,422 [INFO] 
 [USER QUERY]: ord123
 2026-03-21 05:18:20,700 [INFO] 
@@ -20,7 +11,6 @@
 2026-03-21 05:20:34,898 [INFO] 
 [USER QUERY]: ord123
 2026-03-21 05:20:34,900 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
-2026-03-21 05:20:34,901 [INFO] TOOL USAGE: Agent processed tools for query: ord123...
 2026-03-21 05:31:03,439 [INFO] 
 [USER QUERY]: ord123
 2026-03-21 05:31:03,445 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
@@ -30,12 +20,6 @@
 2026-03-21 05:36:18,823 [INFO] 
 [USER QUERY]: ord123
 2026-03-21 05:36:18,826 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
-2026-03-21 05:36:18,827 [INFO] TOOL USAGE: Agent processed tools for query: ord123...
-2026-03-21 05:58:06,844 [INFO] 
-[USER QUERY]: ord123
-2026-03-21 05:58:07,138 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2026-03-21 05:58:07,145 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
-2026-03-21 05:58:07,147 [INFO] TOOL USAGE: Agent processed tools for query: []
 2026-03-21 06:03:36,559 [INFO] 
 [USER QUERY]: ord456
 2026-03-21 06:03:36,816 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
@@ -48,21 +32,16 @@
 [USER QUERY]: ord123
 2026-03-21 23:06:00,503 [INFO] TOOL USAGE: Agent processed tools for query: [{'tool': 'check_order_status', 'input': 'ORD123'}]
 2026-03-21 23:06:00,504 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
-2026-03-21 23:06:00,505 [INFO] TOOL USAGE: Agent processed tools for query: ord123
 2026-03-21 23:06:09,471 [INFO] 
 [USER QUERY]: ord456 return
 2026-03-21 23:08:40,686 [INFO] 
 [USER QUERY]: ord123
 2026-03-21 23:08:40,692 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
-2026-03-21 23:08:40,692 [INFO] TOOL USAGE: Agent processed tools for query: ord123
 2026-03-21 23:08:47,308 [INFO] 
 [USER QUERY]: order456
 2026-03-21 23:08:47,310 [INFO] RETRIEVED CONTEXT: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
-2026-03-21 23:08:47,311 [INFO] TOOL USAGE: Agent processed tools for query: order456
-2026-03-21 23:08:55,683 [INFO] 
 [USER QUERY]: ord456
 2026-03-21 23:08:55,686 [INFO] RETRIEVED CONTEXT: Order ORD456 for Anita Sharma is 'delivered'. Expected delivery: 2026-03-12.
-2026-03-21 23:08:55,687 [INFO] TOOL USAGE: Agent processed tools for query: ord456
 2026-03-21 23:14:15,514 [INFO] 
 [USER QUERY]: ord456 return
 2026-03-21 23:14:15,519 [INFO] CALLING TOOL: check_order_status | OrderID: ORD456
