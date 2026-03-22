@@ -59,19 +59,19 @@ project/
 ```
 ## Architecture Explanation
 ```
-1.** User Interaction (FastAPI)**
+1. User Interaction (FastAPI)
   User sends query via /chat endpoint
   Request is handled in main.py
   Logs are generated (query, response, tools used)
 
-2. **Agent Layer (Core Brain)**
+2. Agent Layer (Core Brain)
   Handled in agent.py
   Responsibilities:
     Intent detection (order / policy / ticket)
     Session memory management
     Tool orchestration
     RAG fallback
-_Flow_:
+Flow:
 User Query
    ↓
 Intent Detection
@@ -82,19 +82,19 @@ Route:
    ↓
 Final Response
 
-3. **Tools Layer**
+3. Tools Layer
   Defined in mytools.py
-  _Tools_:
+  Tools:
     check_order_status
     create_ticket
-  _Features_:
+  Features:
     Validates order ID
     Prevents duplicate tickets
     Reads/writes JSON data
 
-4. **RAG Pipeline**
+4. RAG Pipeline
   Implemented in rag.py
-  _Steps_:
+  Steps:
     Load documents from /docs
     Split into chunks
     Generate embeddings (SentenceTransformer)
@@ -103,19 +103,19 @@ Final Response
 Retrieval Flow:
 Query → Embedding → Vector Search → Top-K Docs → LLM Answer
 
-5. **LLM Layer**
-  _Model_: LLaMA 3.1 (Groq API)
-  _Used for_:
+5. LLM Layer
+  Model: LLaMA 3.1 (Groq API)
+  Used for:
     Answer generation (RAG)
     Context-based responses
 
 6. Logging System
   Logs stored in server.log
-  _Tracks_:
+  Tracks:
     User queries
     Responses
     Tools used
-_example_:
+example:
 [USER QUERY]: Where is my order ORD123?
 [TOOLS USED]: ['check_order_status']
 [RESPONSE]: Order is delivered
