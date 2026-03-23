@@ -1,82 +1,22 @@
 [
   {
     "id": "TCK0001",
-    "issue": "Return request for ORD456",
+    "issue": "Return request for ORD123",
     "metadata": {
-      "order_id": "ORD456",
+      "order_id": "ORD123",
       "type": "return"
     },
-    "created_at": "2026-03-20T18:50:55.478913Z",
+    "created_at": "2026-03-23T06:15:26.477948Z",
     "status": "open"
   },
   {
     "id": "TCK0002",
-    "issue": "Return request for ORD123",
-    "metadata": {
-      "order_id": "ORD123",
-      "type": "return"
-    },
-    "created_at": "2026-03-20T21:23:59.721644Z",
-    "status": "open"
-  },
-  {
-    "id": "TCK0003",
     "issue": "Return request for ORD456",
     "metadata": {
       "order_id": "ORD456",
       "type": "return"
     },
-    "created_at": "2026-03-20T21:25:19.083688Z",
-    "status": "open"
-  },
-  {
-    "id": "TCK0004",
-    "issue": "Return request for ORD123",
-    "metadata": {
-      "order_id": "ORD123",
-      "type": "return"
-    },
-    "created_at": "2026-03-20T22:06:22.009732Z",
-    "status": "open"
-  },
-  {
-    "id": "TCK0005",
-    "issue": "Return request for ORD123",
-    "metadata": {
-      "order_id": "ORD123",
-      "type": "return"
-    },
-    "created_at": "2026-03-20T22:08:56.148492Z",
-    "status": "open"
-  },
-  {
-    "id": "TCK0006",
-    "issue": "Return request for ORD456",
-    "metadata": {
-      "order_id": "ORD456",
-      "type": "return"
-    },
-    "created_at": "2026-03-20T22:12:40.836240Z",
-    "status": "open"
-  },
-  {
-    "id": "TCK0007",
-    "issue": "Return request for ORD456",
-    "metadata": {
-      "order_id": "ORD456",
-      "type": "return"
-    },
-    "created_at": "2026-03-20T22:13:29.732436Z",
-    "status": "open"
-  },
-  {
-    "id": "TCK0008",
-    "issue": "Return request for ORD456",
-    "metadata": {
-      "order_id": "ORD456",
-      "type": "return"
-    },
-    "created_at": "2026-03-20T22:14:09.537003Z",
+    "created_at": "2026-03-23T06:16:03.362391Z",
     "status": "open"
   }
 ]
