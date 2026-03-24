@@ -99,8 +99,9 @@ def _save_tickets(tickets):
 
 @tool
 def check_order_status(order_id: str) -> Dict:
-    """ Tool to check the status of an order by its ID."""
+    """ Use this ONLY when user provides an order ID like ORD123."""
     orders = _load_orders()
+    order_id = order_id.strip().upper()
     if order_id not in orders:
         return {"found": False, "message": f"Order {order_id} not found."}
     order = orders[order_id]
@@ -151,3 +152,39 @@ def create_ticket(issue: str, metadata: Dict = None) -> Dict:
     _save_tickets(tickets)
     return ticket
 
+
+# --- add these imports at the top of mytools.py ---
+from langchain_core.prompts import ChatPromptTemplate
+from rag import rag_retriever, llm
+
+# --- add this tool at the bottom of mytools.py ---
+RAG_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", 
+     "You are a support assistant. Answer ONLY from the provided CONTEXT. "
+     "If the answer is not in the context, say: 'I don't know based on our docs.'"),
+    ("human", "QUESTION:\n{question}\n\nCONTEXT:\n{context}")
+])
+
+_rag_cache = {}
+
+@tool
+def rag_search(question: str) -> str:
+    """Use this ONLY to answer questions about store policies such as 
+    return policy, refund process, shipping timelines, delivery info, 
+    and cancellation rules. Do NOT use this to check order status, 
+    tickets, or any order-specific information."""
+    
+    # Return cached result if same question asked before
+    if question in _rag_cache:
+        return _rag_cache[question]
+    
+    results = rag_retriever.retrieve(question, top_k=4)
+    context = "\n\n".join([r["content"] for r in results]) if results else ""
+    if not context:
+        return "I don't know based on our docs."
+    messages = RAG_PROMPT.format_messages(question=question, context=context)
+    resp = llm.invoke(messages)
+    
+    # Cache the result
+    _rag_cache[question] = resp.content
+    return resp.content

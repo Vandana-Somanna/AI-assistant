@@ -160,3 +160,134 @@ I've created a support ticket TCK0001 for your request.
 2026-03-23 11:47:30,803 [INFO] [TOOLS USED]: ['create_ticket']
 2026-03-23 11:47:30,804 [INFO] [RESPONSE]: I don't know based on our docs.
 I've created a support ticket TCK0001 for your request.
+2026-03-23 16:00:19,314 [INFO] 
+[USER QUERY]: return ord123
+2026-03-23 16:00:19,562 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-23 16:00:19,568 [INFO] [TOOLS USED]: ['check_order_status', 'create_ticket']
+2026-03-23 16:00:19,569 [INFO] [RESPONSE]: Order ORD123 for Ravi Kumar is 'shipped'. Expected delivery: 2026-03-20.
+Based on the provided CONTEXT, I don't have any information about 'ord123'. Could you please provide more context or information about 'ord123' so I can assist you better?
+I've created a support ticket TCK0001 for your request.
+2026-03-24 16:52:52,285 [INFO] 
+[USER QUERY]: ord123
+2026-03-24 16:52:52,558 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:52:52,731 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:52:52,736 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 16:52:52,737 [INFO] [RESPONSE]: The order ord123 was not found.
+2026-03-24 16:53:01,658 [INFO] 
+[USER QUERY]: return means
+2026-03-24 16:53:01,959 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:02,286 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:02,465 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:02,470 [INFO] [TOOLS USED]: ['rag_search']
+2026-03-24 16:53:02,471 [INFO] [RESPONSE]: In this context, 'return' means to send back a product to the seller within 7 days of delivery, provided it meets the conditions of being unused and having its original packaging intact.
+2026-03-24 16:53:12,933 [INFO] 
+[USER QUERY]: return policy
+2026-03-24 16:53:13,336 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:13,729 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:14,081 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:14,084 [INFO] [TOOLS USED]: ['rag_search', 'check_order_status']
+2026-03-24 16:53:14,085 [INFO] [RESPONSE]: Since the order status is "shipped", the return policy applies. Our return policy allows customers to return products within 7 days of delivery. To be eligible for a return, the product must be unused and the original packaging must be required. Once we receive the returned product, we will process the refund within 5-7 business days.
+2026-03-24 16:53:21,835 [INFO] 
+[USER QUERY]: ord123
+2026-03-24 16:53:22,137 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:22,306 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:22,311 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 16:53:22,312 [INFO] [RESPONSE]: The order ord123 was not found.
+2026-03-24 16:53:26,798 [INFO] 
+[USER QUERY]: ord456
+2026-03-24 16:53:26,997 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:27,156 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:53:27,165 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 16:53:27,166 [INFO] [RESPONSE]: The order ord456 was not found.
+2026-03-24 18:36:03,627 [INFO] 
+[USER QUERY]: ord123
+2026-03-24 18:36:03,952 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 18:36:04,143 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 18:36:04,149 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 18:36:04,150 [INFO] [RESPONSE]: The order ord123 was not found.
+2026-03-24 21:04:28,202 [INFO] 
+[USER QUERY]: ORD123?
+2026-03-24 21:04:28,501 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:04:28,731 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:04:28,737 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:04:28,738 [INFO] [RESPONSE]: The order status for ORD123 is shipped with an expected delivery date of 2026-03-20.
+2026-03-24 21:11:33,502 [INFO] 
+[USER QUERY]: ord123
+2026-03-24 21:11:33,912 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:11:34,159 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:11:34,163 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:11:34,163 [INFO] [RESPONSE]: The order ord123 was not found.
+2026-03-24 21:13:47,585 [INFO] 
+[USER QUERY]: ord123
+2026-03-24 21:13:47,899 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:13:48,116 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:13:48,121 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:13:48,122 [INFO] [RESPONSE]: The order status for ORD123 is shipped with an expected delivery date of 2026-03-20.
+2026-03-24 21:13:56,921 [INFO] 
+[USER QUERY]: ord456
+2026-03-24 21:13:57,194 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:13:57,405 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:13:57,410 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:13:57,410 [INFO] [RESPONSE]: The order status for ord456 is delivered. The expected delivery date was 2026-03-12.
+2026-03-24 21:14:03,172 [INFO] 
+[USER QUERY]: what is return policy
+2026-03-24 21:14:03,584 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:03,964 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:04,566 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:04,573 [INFO] [TOOLS USED]: ['rag_search', 'check_order_status']
+2026-03-24 21:14:04,574 [INFO] [RESPONSE]: Since the order status is delivered, you can initiate a return by creating a support ticket. Please provide your order ID and a brief description of the issue.
+2026-03-24 21:14:29,427 [INFO] 
+[USER QUERY]: ord456
+2026-03-24 21:14:29,698 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:29,922 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:29,927 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:14:29,928 [INFO] [RESPONSE]: The order status for ord456 is delivered. The expected delivery date was 2026-03-12.
+2026-03-24 21:14:41,204 [INFO] 
+[USER QUERY]: ord123 return
+2026-03-24 21:14:41,513 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:41,753 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:41,941 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:42,418 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:42,637 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:42,848 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:43,027 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:43,229 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:14:43,234 [INFO] [TOOLS USED]: ['rag_search', 'check_order_status']
+2026-03-24 21:14:43,235 [INFO] [RESPONSE]: Your order has been shipped and is expected to be delivered on 2026-03-20.
+2026-03-24 21:15:02,154 [INFO] 
+[USER QUERY]: can i return my order which is not delivered yrt
+2026-03-24 21:15:02,413 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:15:02,679 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:15:02,684 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:15:02,684 [INFO] [RESPONSE]: Since the order has already been shipped, you cannot return it. However, if you have any issues with the delivery, you can contact our customer support team and we will be happy to assist you.
+2026-03-24 21:22:19,606 [INFO] 
+[USER QUERY]: ord123
+2026-03-24 21:22:19,910 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:22:20,181 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:22:20,186 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:22:20,187 [INFO] [RESPONSE]: The order status is shipped and the expected delivery date is 2026-03-20.
+2026-03-24 21:22:27,496 [INFO] 
+[USER QUERY]: can i return it
+2026-03-24 21:22:27,817 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:22:28,155 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:22:28,353 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:22:28,558 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:22:28,563 [INFO] [TOOLS USED]: ['check_order_status', 'rag_search']
+2026-03-24 21:22:28,564 [INFO] [RESPONSE]: Since the order has already shipped, you can no longer return it.
+2026-03-24 21:25:03,203 [INFO] 
+[USER QUERY]: shipping details please
+2026-03-24 21:25:03,468 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-03-24 21:25:17,298 [INFO] 
+[USER QUERY]: shipping of ord123
+2026-03-24 21:25:17,679 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:25:18,031 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:25:18,246 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:25:18,455 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:25:18,459 [INFO] [TOOLS USED]: ['rag_search', 'check_order_status']
+2026-03-24 21:25:18,460 [INFO] [RESPONSE]: Your order has been shipped and is expected to be delivered on 2026-03-20.
+2026-03-24 21:25:31,840 [INFO] 
+[USER QUERY]: when can i expect the delivery
+2026-03-24 21:25:32,175 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:25:32,374 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 21:25:32,378 [INFO] [TOOLS USED]: ['check_order_status']
+2026-03-24 21:25:32,379 [INFO] [RESPONSE]: You can expect delivery on 2026-03-20.
