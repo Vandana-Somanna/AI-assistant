@@ -99,7 +99,7 @@ def _save_tickets(tickets):
 
 @tool
 def check_order_status(order_id: str) -> Dict:
-    """ Use this ONLY when user provides an order ID like ORD123."""
+    """ Use this to check delivery dates, expected arrival, shipping status, or customer details for a specific Order ID (e.g., ORD123).."""
     orders = _load_orders()
     order_id = order_id.strip().upper()
     if order_id not in orders:
@@ -115,7 +115,9 @@ def check_order_status(order_id: str) -> Dict:
 
 @tool
 def create_ticket(issue: str, metadata: Dict = None) -> Dict:
-    """ Tool to create a support ticket. Checks for existing open tickets to prevent duplicates."""
+    """ Tool to create a support ticket. Checks for existing open tickets to prevent duplicates. 
+    create ticket ONLY when user wants to return an order or wants to cancel the order with a specific order ID.
+    For other issues, skip ticket creation and return a message."""
     
     md = metadata or {}
     order_id = md.get("order_id")
@@ -169,16 +171,16 @@ _rag_cache = {}
 
 @tool
 def rag_search(question: str) -> str:
-    """Use this ONLY to answer questions about store policies such as 
+    """Use this ONLY for questions about THIS STORE's policies — 
     return policy, refund process, shipping timelines, delivery info, 
-    and cancellation rules. Do NOT use this to check order status, 
-    tickets, or any order-specific information."""
+    cancellation rules. Do NOT use for general knowledge questions 
+    like 'what is AI' or 'what is Python'."""
     
     # Return cached result if same question asked before
-    if question in _rag_cache:
-        return _rag_cache[question]
+    # if question in _rag_cache:
+    #     return _rag_cache[question]
     
-    results = rag_retriever.retrieve(question, top_k=4)
+    results = rag_retriever.retrieve(question, top_k=2, score_threshold=0.1)
     context = "\n\n".join([r["content"] for r in results]) if results else ""
     if not context:
         return "I don't know based on our docs."
@@ -186,5 +188,5 @@ def rag_search(question: str) -> str:
     resp = llm.invoke(messages)
     
     # Cache the result
-    _rag_cache[question] = resp.content
-    return resp.content
+    # _rag_cache[question] = resp.content
+    return resp.content 

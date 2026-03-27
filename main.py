@@ -1,4 +1,3 @@
-
 import logging
 from fastapi import FastAPI, UploadFile, File, HTTPException, Request
 from fastapi.responses import HTMLResponse
@@ -57,7 +56,7 @@ async def chat_api(request: Request):
 
         answer = result["response"]
         tools_used = result["tools_used"]
-
+        print(f"DEBUG answer: {repr(answer)}")
         logger.info(f"[TOOLS USED]: {tools_used}")
         logger.info(f"[RESPONSE]: {answer}")
         # answer = agent_chat(message, session_id=session_id)
@@ -119,4 +118,3 @@ def healthz():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
